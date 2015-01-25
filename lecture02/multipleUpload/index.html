@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+		<title>Multiple upload</title>
+	</head>
+	<body>
+		<form action="upload.php" method="post" enctype="multipart/form-data">
+			Send these files:<br>
+			<input name="userfile[]" type="file"><br>
+			<input name="userfile[]" type="file"><br>
+			<input type="submit" value="Отправить файлы ">
+		</form> 
+	</body>
+</html>

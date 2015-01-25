@@ -1,0 +1,2 @@
+Data in text file
+Second line
