@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <title>Translated diagonal line example</title>
+
+  <canvas id="canvas" width="200" height="200"> </canvas>
+  <script>
+        function draw() {
+            var tag = document.getElementById("canvas");   
+			var	ctx = tag.getContext("2d");
+			
+			ctx.strokeRect(10,10,100,100);
+			ctx.fillStyle = "blue"; 
+			// можно задавать всеми способами CSS(rgb,rgba,hsl и т.д.)
+			ctx.fillRect(10,10,100,100);
+			ctx.clearRect(47,45,30,30);
+			
+			ctx.beginPath();
+			ctx.fillStyle = "red"; // меняем цвет на красный
+			ctx.moveTo(10,10);
+			ctx.lineTo(70,30);
+			ctx.lineTo(30,50); // идём с предыдущего значения координат(70,30) в новое(30,50)
+			ctx.fill(); // заполняем пространство между линиями 
+
+        }
+
+        window.addEventListener("load", draw, true);
+  </script>
+</html>

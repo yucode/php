@@ -1,0 +1,41 @@
+h1 {
+	color:blue;
+	font-size:14px
+}
+
+p:first-letter {
+	font-size: 1.5em; 
+	font-weight: bold; 
+	color: red;
+}
+
+td { 
+	padding: 10px 5px 3px 5px;
+	border: 1px solid black; 
+	border-radius: 5px; 
+}
+
+table {
+	text-align: right;
+	border-spacing: 2px; 
+}
+
+.floatRight { 
+	float: right; 
+}
+
+#footer { 
+/* 	clear: both;  */
+	position: relative; 
+}
+
+#footer img { 
+	position: absolute;
+	top: 0; 
+	right: 0;
+	z-index: -1;
+	opacity: 0.2;
+}
+
+
+
